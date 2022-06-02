@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://junk.pages.dev/">
-    <img src="https://junk.pages.dev/assets/images/junk.png" alt="Junk Framework Logo" width="200" height="165">
+    <img src="https://junk.pages.dev/assets/images/junk.png" alt="Junk Framework Logo" width="200" height="200">
   </a>
 </p>
 
