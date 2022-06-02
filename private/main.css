@@ -1,6 +1,8 @@
+/* Universal */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
+box-sizing: border-box;
 margin: 0px;
 font-family: 'Patrick Hand';
 }
@@ -9,6 +11,11 @@ body {
   background-color: #ffffff;
 }
 
+.pg_title {
+  text-align: center;
+  font-size: 2em;
+  padding: 0.2em;
+}
 /* Header */
 .header_main {
   background-color: #ffffff;
@@ -96,6 +103,31 @@ body {
   background-color: lightblue;
 }
 
+/* Coming Soon */
+.coming_soon {
+  background-color: #ffeffe;
+  padding: 8px;
+  border-radius: 0.5em;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 10px;
+  height: 400px;
+  width: 90%;
+}
+
+.coming_soon .cs_title {
+  text-align: center;
+  font-size: 1.7em;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 0.2em 0.2em 0em 0em;
+}
+
+.coming_soon p {
+  text-align: center;
+  font-size: 1.5em;
+}
 
 /* Paragraph */
 p {
