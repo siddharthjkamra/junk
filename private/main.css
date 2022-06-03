@@ -138,6 +138,26 @@ p {
   font-size: 1.1em;
 }
 
+/* List ol and ul */
+ol {
+  
+}
+
+ul {
+  
+}
+
+li {
+  
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #000;
+}
 
 /* Footer */
 .footer_main {
