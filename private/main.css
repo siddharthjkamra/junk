@@ -132,10 +132,17 @@ body {
 /* Paragraph */
 .container {
   padding: 10px;
+  margin: auto;
 }
 p {
   padding: 5px;
   font-size: 1.1em;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /* List ol and ul */
@@ -157,6 +164,37 @@ li a {
 
 li a:hover {
   color: #000;
+}
+
+/* Code Preview */
+#code {
+  background-color: #ffeffe;
+  width: 80%;
+  outline-color: black;
+  border-radius: 2px;
+  border: none;
+  resize: none;
+  font-size: 1em;
+}
+
+/* Docs List */
+.docs_list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.docs_list li {
+  background-color: #ffeffe;
+  padding: 10px;
+  margin: 3px;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1.5px solid #e5e5e5;
+}
+
+.docs_list li:hover {
+  background-color: #40396e;
+  color: white;
 }
 
 /* Footer */
