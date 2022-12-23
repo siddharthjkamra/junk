@@ -1,20 +1,27 @@
 /* Universal */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@font-face {
+font-family: Kosugi Maru;
+src: url(KosugiMaru-Regular.ttf);
+}
 
 * {
 box-sizing: border-box;
 margin: 0px;
-font-family: 'Patrick Hand';
+font-family: Kosugi Maru;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #e1f8dc;
 }
 
 .pg_title {
   text-align: center;
   font-size: 2em;
   padding: 0.2em;
+}
+
+a {
+  text-decoration: none;
 }
 /* Header */
 .header_main {
@@ -32,80 +39,22 @@ body {
   font-size: 1.5em;
 }
 
-/* Hamburger Menu */
-#menu__toggle {
-  opacity: 0;
-  display: none;
+.menu_header {
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5px;
+  text-align: center;
 }
-#menu__toggle:checked + .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked + .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-#menu__toggle:checked + .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  left: 0 !important;
-}
-.menu__btn {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-.menu__box {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #ffeffe;
-  border-right: 1px solid black;
-  transition-duration: 0.25s;
-}
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #000;
-  font-size: 20px;
-  text-decoration: none;
-  transition-duration: 0.25s;
-}
-.menu__item:hover {
-  background-color: lightblue;
+.menu_header li {
+  margin-right: 5px;
+  background-color: #e1f8dc;
+  padding: 5px;
 }
 
 /* Coming Soon */
 .coming_soon {
-  background-color: #ffeffe;
+  background-color: #ffffff;
   padding: 8px;
   border-radius: 0.5em;
   border: 1px solid grey;
@@ -118,7 +67,7 @@ body {
 .coming_soon .cs_title {
   text-align: center;
   font-size: 1.7em;
-  background-color: black;
+  background-color: #40396e;
   color: white;
   padding: 8px;
   border-radius: 0.2em 0.2em 0em 0em;
@@ -168,10 +117,9 @@ li a:hover {
 
 /* Code Preview */
 #code {
-  background-color: #ffeffe;
-  width: 80%;
-  outline-color: black;
-  border-radius: 2px;
+  background-color: #ffffff;
+  width: 90%;
+  outline-color: #40396e;
   border: none;
   resize: none;
   font-size: 1em;
@@ -184,7 +132,7 @@ li a:hover {
 }
 
 .docs_list li {
-  background-color: #ffeffe;
+  background-color: #ffffff;
   padding: 10px;
   margin: 3px;
   font-size: 1.2em;
@@ -197,16 +145,19 @@ li a:hover {
   color: white;
 }
 
+.docs_list a {
+  color: black;
+}
+
 /* Footer */
 .footer_main {
-  background-color: #ffeffe;
-  padding: 8px;
+  background-color: #ffffff;
+  padding: 10px;
 }
 
 .footer_main p {
   text-align: center;
   color: #000000;
-  font-size: 1.3em;
 }
 
 .footer_main ul {
@@ -218,5 +169,7 @@ li a:hover {
 .footer_main li {
   display: inline;
   margin: 2px;
-  font-size: 1.1em;
+  background-color: #e1f8dc;
+  padding: 5px;
+  color: blue;
 }
