@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breadcrumb</title>
+<link rel="stylesheet" href="/prog/main.css">
+<script src="/prog/angular.min.js"></script>
+</head>
+<body ng-app="">
+<div ng-include="'/site/header'"></div>
+<div class="pg_title">Breadcrumb</div>
+<div class="container">
+<textarea id="code" rows="12" readonly>
+<ul class="breadcrumb">
+<li><a href="/">Home</a></li>
+<li><a href="/blog">Blog</a></li>
+<li>What is Dhamma?</li>
+</ul>
+
+<ul class="breadcrumb dark">
+<li><a href="/">Home</a></li>
+<li><a href="/blog">Blog</a></li>
+<li>What is Dhamma?</li>
+</ul>
+</textarea>
+<div id="example-text">Example</div>
+<div id="demo">
+<ul class="breadcrumb">
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li>What is Dhamma?</li>
+</ul><br>
+<ul class="breadcrumb dark">
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li>What is Dhamma?</li>
+</ul>
+</div>
+
+</div>
+<link rel="stylesheet" href="/public/junk1.css">
+<div ng-include="'/site/footer'"></div>
+</body>
+</html>

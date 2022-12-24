@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Not Found</title>
-  <link rel="stylesheet" href="/private/main.css">
-  <script src="/private/main.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found</title>
+<link rel="stylesheet" href="/prog/main.css">
+<script src="/prog/angular.min.js"></script>
+  
 </head>
-<body>
-<div katana="/site/header.html"></div>
+<body ng-app="">
+<div ng-include="'/site/header'"></div>
 <div class="container">
 <div class="coming_soon">
 <div class="cs_title">404 Error</div>
 <p>The page you are looking for does not exist or has moved.</p>
 </div>
 </div>
-<div katana="/site/footer.html"></div>
-<script>
-includeHTML();
-</script>
+<div ng-include="'/site/footer'"></div>
 </body>
 </html>

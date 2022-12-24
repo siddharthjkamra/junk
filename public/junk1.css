@@ -1,0 +1,53 @@
+/*
+ * Junk Framework Components Library v1.0  (https://metroui.org.ua)
+ * Copyright 2022 Siddharth Kumar
+ * Built at 24/12/2022 12:30:00
+ * Licensed under MIT
+ */
+
+/* Breadcrumb */
+ul.breadcrumb {
+  padding: 10px;
+  list-style: none;
+  background-color: #eee;
+  margin: 0px 4px 0px 4px;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1em;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* Breadcrumb Dark */
+ul.breadcrumb.dark {
+  padding: 10px;
+  list-style: none;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0px 4px 0px 4px;
+}
+ul.breadcrumb.dark li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+}
+ul.breadcrumb.dark li a {
+  color: orange;
+  text-decoration: none;
+}
+ul.breadcrumb.dark li a:hover {
+  color: white;
+  text-decoration: underline;
+}

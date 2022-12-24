@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Documentation - Junk Framework</title>
-  <link rel="stylesheet" href="/private/main.css">
-  <script src="/private/main.js"></script>
+  <link rel="stylesheet" href="/prog/main.css">
+  <script src="/prog/angular.min.js"></script>
 </head>
-<body>
-<div katana="/site/header.html"></div>
+<body ng-app="">
+<div ng-include="'/site/header'"></div>
 <div class="pg_title">Docs</div>
 <div class="container">
 <h2>Installation</h2>
 <p>Either you can install Framework through CDN or you can download files and use locally</p>
 <h4>1. CDN</h4>
 <p>Put this code between head tag of your website</p>
-<textarea id="code" rows="3" readonly><link rel="stylesheet" href="/public/release.css">
-<script src="/public/release.js"></script></textarea>
+<textarea id="code" rows="3" readonly><link rel="stylesheet" href="/public/junk1.css"></textarea>
 <h4>2. Store locally</h4>
 <p>Save this CSS and JavaScript file and link through external stylesheet and script</p>
 <p>download <a href="#">junk.zip</a></p>
@@ -25,7 +24,7 @@
 <ul>
 <li>Navbar</li>
 <li>Hero</li>
-<li>Breadcrumb</li>
+<a href="breadcrumb.html"><li>Breadcrumb</li></a>
 <li>List</li>
 <li>Forms</li>
 <li>Blog</li>
@@ -42,9 +41,6 @@
 </ul>
 </div>
 </div>
-<div katana="/site/footer.html"></div>
-<script>
-includeHTML();
-</script>
+<div ng-include="'/site/footer'"></div>
 </body>
 </html>

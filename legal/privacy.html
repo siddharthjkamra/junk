@@ -4,20 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy</title>
-    <link rel="stylesheet" href="/private/main.css">
-  <script src="/private/main.js"></script>
+    <link rel="stylesheet" href="/prog/main.css">
+  <script src="/prog/angular.min.js"></script>
 </head>
 
-<body>
-<div katana="/site/header.html"></div>
+<body ng-app="">
+<div ng-include="'/site/header'"></div>
 <div class="pg_title">Privacy</div>
 <div class="coming_soon">
 <div class="cs_title">Coming Soon</div>
 <p>This content is under development and will be available here as soon as possible.</p>
 </div>
-<div katana="/site/footer.html"></div>
-<script>
-includeHTML();
-</script>
+<div ng-include="'/site/footer'"></div>
 </body>
 </html>

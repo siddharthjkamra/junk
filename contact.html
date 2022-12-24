@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact</title>
-    <link rel="stylesheet" href="private/main.css">
-  <script src="private/main.js"></script>
+    <link rel="stylesheet" href="prog/main.css">
+  <script src="prog/angular.min.js"></script>
 </head>
 
-<body>
-<div katana="site/header.html"></div>
+<body ng-app="">
+<div ng-include="'/site/header'"></div>
 <div class="pg_title">Contact</div>
 <div class="container">
 <h2>Social</h2>
@@ -26,9 +26,6 @@
 <h2>Office</h2>
 <p>We don't have any office address yet.</p>
 </div>
-<div katana="site/footer.html"></div>
-<script>
-includeHTML();
-</script>
+<div ng-include="'/site/footer'"></div>
 </body>
 </html>
