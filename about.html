@@ -10,7 +10,7 @@
 
 <body>
 <div data-includeHTML="/site/header"></div>
-<div class="pg_title">About</div>
+<div class="header"></div>
 <div class="container">
 <h2>Team</h2>
 <p>Junk is maintained by some people. We (there's no "We" actually) are always looking for people who could contribute and improve this Framework. You are invited, only requirements are HTML, CSS and JS.</p>
@@ -23,11 +23,9 @@
 </div>
 <div data-includeHTML="/site/footer"></div>
 <script>
-    $(document).ready(function () {
-        $("div[data-includeHTML]").each(function () {                
-            $(this).load($(this).attr("data-includeHTML"));
-        });
-    });
+function contact() {
+    $('.header').load('site/header');
+}
 </script>
 </body>
 </html>
