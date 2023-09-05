@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About</title>
 <link rel="stylesheet" href="prog/main.css">
-<script src="prog/angular.min.js"></script>
+<script src="prog/main.js"></script>
 </head>
 
-<body ng-app="">
-<div ng-include="'/site/header'"></div>
+<body>
+<div data-includeHTML="/site/header"></div>
 <div class="pg_title">About</div>
 <div class="container">
 <h2>Team</h2>
@@ -21,6 +21,13 @@
 <h2>Join the league</h2>
 <p>Join us to make it a proper super Framework. GitHub is the way of Joining.</p>
 </div>
-<div ng-include="'/site/footer'"></div>
+<div data-includeHTML="/site/footer"></div>
+<script>
+    $(document).ready(function () {
+        $("div[data-includeHTML]").each(function () {                
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
 </body>
 </html>
