@@ -11,4 +11,4 @@ function include(file) {
 
 /* Include Many js files */
 include(
-'/prog/jquery-3.7.1.min.js');
+'https://junk.pages.dev/prog/jquery-3.7.1.min.js');
