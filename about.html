@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About</title>
 <link rel="stylesheet" href="prog/main.css">
-<script src="prog/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
-<div data-includeHTML="/site/header"></div>
 <div class="header"></div>
 <div class="container">
 <h2>Team</h2>
@@ -21,11 +20,14 @@
 <h2>Join the league</h2>
 <p>Join us to make it a proper super Framework. GitHub is the way of Joining.</p>
 </div>
-<div data-includeHTML="/site/footer"></div>
+<div class="footer"></div>
 <script>
 function contact() {
     $('.header').load('site/header');
 }
+    function contact() {
+    $('.footer').load('site/footer');
+    }
 </script>
 </body>
 </html>
